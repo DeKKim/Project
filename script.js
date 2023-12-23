@@ -37,12 +37,16 @@ function getWeather(city) {
 function changeBackground(conditions) {
   if (conditions.includes("rain")) {
     background.style.background = "url('rain.gif') no-repeat center center fixed";
+    background.style.backgroundSize = "cover";
   } else if (conditions.includes("clear")) {
     background.style.background = "url('sun.gif') no-repeat center center fixed";
+    background.style.backgroundSize = "cover";
   } else if (conditions.includes("cloud") || conditions.includes("overcast")) {
     background.style.background = "url('clouds.gif') no-repeat center center fixed";
+    background.style.backgroundSize = "cover";
   } else if (conditions.includes("snow")) {
     background.style.background = "url('snow.gif') no-repeat center center fixed";
+    background.style.backgroundSize = "cover";
   } else {
     background.style.background = "#a0e6e6"; 
   }
